@@ -18,7 +18,7 @@ jobs:
             
       - name: 设置环境变量
         run:
-          set set path=%path%;c:\mingw64\bin
+          set path=%path%;c:\mingw64\bin
           
 
       - name: install dependencies
