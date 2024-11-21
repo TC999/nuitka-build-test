@@ -20,7 +20,7 @@ jobs:
             
       - name: 解压并设置环境变量
         run: |
-          tar -xf C:\mingw64.zip
+          tar -xf C:\mingw64.zip -C C:\
           set path=%path%;C:\mingw64\bin
           
 
