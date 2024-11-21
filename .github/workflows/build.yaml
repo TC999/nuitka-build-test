@@ -31,7 +31,7 @@ jobs:
       - name: 编译 main.py
         shell: bash
         run:
-          python -m nuitka -mingw64 --standalone --assume-yes-for-downloads --follow-imports --no-prefer-source-code main.py
+          python -m nuitka -mingw64 --standalone --onefile --assume-yes-for-downloads --follow-imports --no-prefer-source-code --main="main.py"
 
       - name: test main.exe
         shell: bash
